@@ -5,7 +5,7 @@ use warnings;
 use strict;
 
 use URI;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -61,10 +61,11 @@ sub rules {
 	  tr => { line_format => 'single', end => "\n" },
 	  td => { end => \&_td_end },
 	  th => { alias => 'td' },
-	  dl => { block => 1, preserve => 1 },
+	  dl => { line_format => 'multi', block => 1, preserve => 1 },
 	  dd => { preserve => 1 },
 	  dt => { preserve => 1 },
 
+      p => { block => 1, line_format => 'multi', trim => 'both' },
       br => { start => "\n" },
 	  
 

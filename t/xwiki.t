@@ -97,6 +97,14 @@ in one line</i></html>
 __W__
 ~~phrasals in one line~~
 __NEXT__
+paragrahs
+__H__
+<html><p>first</p><p>second</p></html>
+__W__
+first
+
+second
+__NEXT__
 lists
 __H__
 <html><ul><li>1</li><li>2</li></ul></html>
@@ -121,8 +129,7 @@ __W__
 ** a
 **1. i
 ** b
-* 2
-<dl><dd>indented</dd></dl>
+* 2<dl><dd>indented</dd></dl>
 __NEXT__
 hr
 __H__
